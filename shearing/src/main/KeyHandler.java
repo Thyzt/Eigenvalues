@@ -23,6 +23,14 @@ public class KeyHandler implements KeyListener {
         if (code == KeyEvent.VK_LEFT){
             leftPressed = true;
         }
+
+        if (code == KeyEvent.VK_UP){
+            upPressed = true;
+        }
+
+        if (code == KeyEvent.VK_DOWN){
+            downPressed = true;
+        }
     }
 
     @Override
@@ -35,6 +43,14 @@ public class KeyHandler implements KeyListener {
 
         if (code == KeyEvent.VK_LEFT){
             leftPressed = false;
+        }
+
+        if (code == KeyEvent.VK_UP){
+            upPressed = false;
+        }
+
+        if (code == KeyEvent.VK_DOWN){
+            downPressed = false;
         }
     }
 }
